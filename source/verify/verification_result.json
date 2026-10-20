@@ -1,0 +1,585 @@
+{
+  "order": 1507,
+  "generated_at": "2026-10-20T04:18:46.252122+00:00",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "assertions_total": 82,
+  "assertions_passed": 82,
+  "assertions_failed": 0,
+  "all_passed": true,
+  "checks": [
+    {
+      "index": 1,
+      "name": "必需文件齐全",
+      "expected": "27 个",
+      "actual": "27 个",
+      "passed": true
+    },
+    {
+      "index": 2,
+      "name": "必需文件非空",
+      "expected": "0 个空文件",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 3,
+      "name": "合成原始记录不少于 20 条",
+      "expected": ">=20",
+      "actual": "24",
+      "passed": true
+    },
+    {
+      "index": 4,
+      "name": "SOLUTION 含两个链接占位",
+      "expected": "REPO_LINK_HERE + ZIP_LINK_HERE",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 5,
+      "name": "原始记录全部可解析",
+      "expected": "0 错误 / 24 条",
+      "actual": "0 错误",
+      "passed": true
+    },
+    {
+      "index": 6,
+      "name": "原始记录条数",
+      "expected": "24",
+      "actual": "24",
+      "passed": true
+    },
+    {
+      "index": 7,
+      "name": "全部记录通过 Schema 校验",
+      "expected": "0 错误",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 8,
+      "name": "hash = SHA-256(原始正文)",
+      "expected": "全部一致",
+      "actual": "24/24",
+      "passed": true
+    },
+    {
+      "index": 9,
+      "name": "来源指针四要素齐全（system/uri/record_id/hash）",
+      "expected": "全部齐全",
+      "actual": "24/24",
+      "passed": true
+    },
+    {
+      "index": 10,
+      "name": "来源系统在登记清单内",
+      "expected": "全部合规",
+      "actual": "24/24",
+      "passed": true
+    },
+    {
+      "index": 11,
+      "name": "来源 URI 可解析（含 scheme）",
+      "expected": "全部合规",
+      "actual": "24/24",
+      "passed": true
+    },
+    {
+      "index": 12,
+      "name": "正文可在源文件中按字节定位",
+      "expected": "24/24",
+      "actual": "24/24",
+      "passed": true
+    },
+    {
+      "index": 13,
+      "name": "正文被改写后 hash 校验拒绝",
+      "expected": "拒绝 source.hash",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 14,
+      "name": "命令退出码：第一次导入",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 15,
+      "name": "第一次导入统计可解析",
+      "expected": "JSON",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 16,
+      "name": "第一次导入：总行数 24",
+      "expected": "24",
+      "actual": "24",
+      "passed": true
+    },
+    {
+      "index": 17,
+      "name": "第一次导入：新增 23",
+      "expected": "23",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 18,
+      "name": "第一次导入：去重 1（文件内重复行）",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "index": 19,
+      "name": "第一次导入：拒绝 0",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 20,
+      "name": "存储行数等于新增行数",
+      "expected": "23",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 21,
+      "name": "存储链完整性",
+      "expected": "ok",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 22,
+      "name": "命令退出码：第二次导入（幂等）",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 23,
+      "name": "第二次导入：新增 0",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 24,
+      "name": "第二次导入：整份去重 24",
+      "expected": "24",
+      "actual": "24",
+      "passed": true
+    },
+    {
+      "index": 25,
+      "name": "重复导入后文件字节不变",
+      "expected": "sha256 相同",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 26,
+      "name": "第二次写入只追加不截断",
+      "expected": "前缀一致",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 27,
+      "name": "重复导入后行数仍为 23",
+      "expected": "23",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 28,
+      "name": "同一 record_id 保留两个版本",
+      "expected": "[1, 2]",
+      "actual": "[1, 2]",
+      "passed": true
+    },
+    {
+      "index": 29,
+      "name": "历史版本正文哈希未被改写",
+      "expected": "一致",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 30,
+      "name": "导入轨迹含跳过与完成事件",
+      "expected": "ingest_skip + ingest_done",
+      "actual": "ingest_skip=1 ingest_done=1",
+      "passed": true
+    },
+    {
+      "index": 31,
+      "name": "每条记录都有访问标签",
+      "expected": "0 条缺失",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 32,
+      "name": "analyst 无法读取 HR 记录",
+      "expected": "allowed=False",
+      "actual": "allowed=False missing=['hr', 'sensitive']",
+      "passed": true
+    },
+    {
+      "index": 33,
+      "name": "compliance_auditor 可读 HR 记录",
+      "expected": "allowed=True",
+      "actual": "allowed=True",
+      "passed": true
+    },
+    {
+      "index": 34,
+      "name": "analyst 导出仅 3 条（内部/聚合）",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "index": 35,
+      "name": "analyst 导出不含 HR 记录",
+      "expected": "不含 MR-2026-0002",
+      "actual": "['MR-2026-0010', 'MR-2026-0010', 'MR-2026-0011']",
+      "passed": true
+    },
+    {
+      "index": 36,
+      "name": "导出记录带授权标记 _grant",
+      "expected": "全部带标记",
+      "actual": "3/3",
+      "passed": true
+    },
+    {
+      "index": 37,
+      "name": "拒绝判定被记录（含 decision_id）",
+      "expected": ">0 且带 decision_id",
+      "actual": "denied=20 first=AD-0001",
+      "passed": true
+    },
+    {
+      "index": 38,
+      "name": "未知角色默认拒绝",
+      "expected": "allowed=False",
+      "actual": "allowed=False",
+      "passed": true
+    },
+    {
+      "index": 39,
+      "name": "intern 仅见普通内部记录 1 条",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "index": 40,
+      "name": "合规审计员可见全部 23 条",
+      "expected": "23",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 41,
+      "name": "导入产物无残留敏感信息",
+      "expected": "0 处",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 42,
+      "name": "实际执行了脱敏（记录数）",
+      "expected": ">=20",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 43,
+      "name": "脱敏命中总数",
+      "expected": ">0",
+      "actual": "67",
+      "passed": true
+    },
+    {
+      "index": 44,
+      "name": "脱敏前后对照不少于 8 条",
+      "expected": ">=8",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 45,
+      "name": "对照表中前后确实不同",
+      "expected": "23/23",
+      "actual": "23/23",
+      "passed": true
+    },
+    {
+      "index": 46,
+      "name": "同一手机号映射到同一 token",
+      "expected": "token 相同",
+      "actual": "['[PHONE:83934d]'] == ['[PHONE:83934d]']",
+      "passed": true
+    },
+    {
+      "index": 47,
+      "name": "脱敏结果确定性（同输入同输出）",
+      "expected": "两次一致",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 48,
+      "name": "原始样例明确为合成数据",
+      "expected": "含 synthetic 标记或说明",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 49,
+      "name": "citations.jsonl 条数等于存储行数",
+      "expected": "23",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 50,
+      "name": "每条引用都能切片定位并哈希一致",
+      "expected": "23/23",
+      "actual": "全部通过",
+      "passed": true
+    },
+    {
+      "index": 51,
+      "name": "引用行号与存储定位一致",
+      "expected": "0 不一致",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 52,
+      "name": "正文区间落在整行区间内",
+      "expected": "0 越界",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 53,
+      "name": "示例引用可解析出原始正文",
+      "expected": "非空",
+      "actual": "会议由张伟主持，采购部李娜记录。华信数据对接人王强电话13800001111，邮箱wang.qiang@huaxin-data.example.com。结论：…",
+      "passed": true
+    },
+    {
+      "index": 54,
+      "name": "示例引用 hash 与正文切片一致",
+      "expected": "68913b3efb4a59b1d51496bde130699c9b9f01252d1aa2fceb6889e54bceeef3",
+      "actual": "68913b3efb4a59b1d51496bde130699c9b9f01252d1aa2fceb6889e54bceeef3",
+      "passed": true
+    },
+    {
+      "index": 55,
+      "name": "out/records_imported.jsonl 行数",
+      "expected": "23",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 56,
+      "name": "导入产物全部脱敏（有 redaction 元数据）",
+      "expected": "23/23",
+      "actual": "23/23",
+      "passed": true
+    },
+    {
+      "index": 57,
+      "name": "导入产物保留访问标签",
+      "expected": "23/23",
+      "actual": "23/23",
+      "passed": true
+    },
+    {
+      "index": 58,
+      "name": "导入产物保留来源定位",
+      "expected": "23/23",
+      "actual": "23/23",
+      "passed": true
+    },
+    {
+      "index": 59,
+      "name": "导入产物保留接收时间",
+      "expected": "23/23",
+      "actual": "23/23",
+      "passed": true
+    },
+    {
+      "index": 60,
+      "name": "导入报告含「总行数：24」",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 61,
+      "name": "导入报告含「新增行数：23」",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 62,
+      "name": "导入报告含「去重跳过：1」",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 63,
+      "name": "导入报告含「校验拒绝：0」",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 64,
+      "name": "导入报告含「存储总行数：23」",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 65,
+      "name": "报告统计与 CLI 一致",
+      "expected": "23",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 66,
+      "name": "out/redaction_diff.md 至少 8 条对照",
+      "expected": ">=8",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 67,
+      "name": "对照表含原文与脱敏后两列",
+      "expected": "两列齐全",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "index": 68,
+      "name": "citations.jsonl 含 system/uri/hash/record_id",
+      "expected": "全部含",
+      "actual": "23/23",
+      "passed": true
+    },
+    {
+      "index": 69,
+      "name": "citations.jsonl 含字节偏移",
+      "expected": "全部含",
+      "actual": "23/23",
+      "passed": true
+    },
+    {
+      "index": 70,
+      "name": "out/access_log.jsonl 有授权判定记录",
+      "expected": ">0",
+      "actual": "161",
+      "passed": true
+    },
+    {
+      "index": 71,
+      "name": "授权日志同时含允许与拒绝",
+      "expected": "两类都有",
+      "actual": "allow=41 deny=120",
+      "passed": true
+    },
+    {
+      "index": 72,
+      "name": "导入产物与存储一致（行数）",
+      "expected": "23",
+      "actual": "23",
+      "passed": true
+    },
+    {
+      "index": 73,
+      "name": "命令退出码：单元测试",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 74,
+      "name": "测试输出含 N/N tests passed",
+      "expected": "存在",
+      "actual": "37/37 tests passed",
+      "passed": true
+    },
+    {
+      "index": 75,
+      "name": "测试全部通过",
+      "expected": "37/37",
+      "actual": "37/37 tests passed",
+      "passed": true
+    },
+    {
+      "index": 76,
+      "name": "目录与文件名全部 ASCII",
+      "expected": "全部 ASCII",
+      "actual": "全部 ASCII",
+      "passed": true
+    },
+    {
+      "index": 77,
+      "name": "UTF-8 无 BOM",
+      "expected": "0 个 BOM 文件",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 78,
+      "name": "文档与代码无 emoji",
+      "expected": "0 个",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 79,
+      "name": "仅标准库导入（无第三方依赖）",
+      "expected": "0 个第三方导入",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 80,
+      "name": "命令退出码：复跑 demo",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "index": 81,
+      "name": "demo 两次产物逐字节一致",
+      "expected": "全部相同",
+      "actual": "records_imported.jsonl:同,import_report.md:同,redaction_diff.md:同,citations.jsonl:同,access_log.jsonl:同",
+      "passed": true
+    },
+    {
+      "index": 82,
+      "name": "demo 输出含统计行",
+      "expected": "总行数=24 新增=23",
+      "actual": "True",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+订单 #1507 管理记录知识接线 - demo
+输入: samples/raw_records.jsonl
+总行数=24 新增=23 去重跳过=1 版本提升=0 拒绝=0
+存储行数=23 脱敏记录=24 脱敏命中=70
+引用=23 可定位=23 链校验=通过
+角色可见: hr_admin=6 finance_controller=3 ops_lead=3 legal_counsel=2 compliance_auditor=23 analyst=3 intern=1
+产物: out/records_imported.jsonl out/import_report.md out/redaction_diff.md out/citations.jsonl out/access_log.jsonl out/trace.jsonl

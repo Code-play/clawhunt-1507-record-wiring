@@ -1,0 +1,32 @@
+{"at": "2026-10-20T09:00:00Z", "event": "ingest_append", "labels": ["internal", "finance"], "line": 1, "record_id": "MR-2026-0001", "redactions": 5, "seq": 1, "version": 1}
+{"at": "2026-10-20T09:00:01Z", "event": "ingest_append", "labels": ["internal", "hr", "sensitive"], "line": 2, "record_id": "MR-2026-0002", "redactions": 5, "seq": 2, "version": 1}
+{"at": "2026-10-20T09:00:02Z", "event": "ingest_append", "labels": ["internal", "finance"], "line": 3, "record_id": "MR-2026-0003", "redactions": 3, "seq": 3, "version": 1}
+{"at": "2026-10-20T09:00:03Z", "event": "ingest_skip", "line": 4, "reason": "duplicate_record_id_and_hash", "record_id": "MR-2026-0003", "seq": 4}
+{"at": "2026-10-20T09:00:04Z", "event": "ingest_append", "labels": ["internal", "ops"], "line": 5, "record_id": "MR-2026-0004", "redactions": 3, "seq": 5, "version": 1}
+{"at": "2026-10-20T09:00:05Z", "event": "ingest_append", "labels": ["internal", "legal", "finance", "sensitive"], "line": 6, "record_id": "MR-2026-0005", "redactions": 4, "seq": 6, "version": 1}
+{"at": "2026-10-20T09:00:06Z", "event": "ingest_append", "labels": ["internal", "audit", "finance", "sensitive"], "line": 7, "record_id": "MR-2026-0006", "redactions": 5, "seq": 7, "version": 1}
+{"at": "2026-10-20T09:00:07Z", "event": "ingest_append", "labels": ["internal", "legal", "audit"], "line": 8, "record_id": "MR-2026-0007", "redactions": 2, "seq": 8, "version": 1}
+{"at": "2026-10-20T09:00:08Z", "event": "ingest_append", "labels": ["internal", "ops", "legal"], "line": 9, "record_id": "MR-2026-0008", "redactions": 2, "seq": 9, "version": 1}
+{"at": "2026-10-20T09:00:09Z", "event": "ingest_append", "labels": ["internal", "hr", "sensitive"], "line": 10, "record_id": "MR-2026-0009", "redactions": 5, "seq": 10, "version": 1}
+{"at": "2026-10-20T09:00:10Z", "event": "ingest_append", "labels": ["internal", "analytics"], "line": 11, "record_id": "MR-2026-0010", "redactions": 2, "seq": 11, "version": 1}
+{"at": "2026-10-20T09:00:11Z", "event": "ingest_append", "labels": ["internal", "analytics"], "line": 12, "record_id": "MR-2026-0010", "redactions": 3, "seq": 12, "version": 2}
+{"at": "2026-10-20T09:00:12Z", "event": "ingest_append", "labels": ["internal"], "line": 13, "record_id": "MR-2026-0011", "redactions": 2, "seq": 13, "version": 1}
+{"at": "2026-10-20T09:00:13Z", "event": "ingest_append", "labels": ["internal", "ops"], "line": 14, "record_id": "MR-2026-0012", "redactions": 2, "seq": 14, "version": 1}
+{"at": "2026-10-20T09:00:14Z", "event": "ingest_append", "labels": ["internal", "audit", "sensitive"], "line": 15, "record_id": "MR-2026-0013", "redactions": 3, "seq": 15, "version": 1}
+{"at": "2026-10-20T09:00:15Z", "event": "ingest_append", "labels": ["internal", "legal", "sensitive"], "line": 16, "record_id": "MR-2026-0014", "redactions": 2, "seq": 16, "version": 1}
+{"at": "2026-10-20T09:00:16Z", "event": "ingest_append", "labels": ["internal", "finance", "hr"], "line": 17, "record_id": "MR-2026-0015", "redactions": 2, "seq": 17, "version": 1}
+{"at": "2026-10-20T09:00:17Z", "event": "ingest_append", "labels": ["internal", "ops", "audit"], "line": 18, "record_id": "MR-2026-0016", "redactions": 3, "seq": 18, "version": 1}
+{"at": "2026-10-20T09:00:18Z", "event": "ingest_append", "labels": ["internal", "hr"], "line": 19, "record_id": "MR-2026-0017", "redactions": 3, "seq": 19, "version": 1}
+{"at": "2026-10-20T09:00:19Z", "event": "ingest_append", "labels": ["internal", "hr"], "line": 20, "record_id": "MR-2026-0018", "redactions": 1, "seq": 20, "version": 1}
+{"at": "2026-10-20T09:00:20Z", "event": "ingest_append", "labels": ["internal", "finance", "legal"], "line": 21, "record_id": "MR-2026-0019", "redactions": 2, "seq": 21, "version": 1}
+{"at": "2026-10-20T09:00:21Z", "event": "ingest_append", "labels": ["internal", "ops", "finance"], "line": 22, "record_id": "MR-2026-0020", "redactions": 2, "seq": 22, "version": 1}
+{"at": "2026-10-20T09:00:22Z", "event": "ingest_append", "labels": ["internal", "hr", "sensitive"], "line": 23, "record_id": "MR-2026-0021", "redactions": 4, "seq": 23, "version": 1}
+{"at": "2026-10-20T09:00:23Z", "event": "ingest_append", "labels": ["internal", "audit", "legal", "sensitive"], "line": 24, "record_id": "MR-2026-0022", "redactions": 2, "seq": 24, "version": 1}
+{"added": 23, "at": "2026-10-20T09:00:24Z", "event": "ingest_done", "input_file": "samples/raw_records.jsonl", "redaction_findings": 70, "redaction_records": 24, "rejected": 0, "seq": 25, "skipped_duplicate": 1, "stored_rows": 23, "total_lines": 24, "version_bumped": 0}
+{"at": "2026-10-20T09:00:25Z", "event": "access_export", "role": "hr_admin", "seq": 26, "total": 23, "visible": 6}
+{"at": "2026-10-20T09:00:26Z", "event": "access_export", "role": "finance_controller", "seq": 27, "total": 23, "visible": 3}
+{"at": "2026-10-20T09:00:27Z", "event": "access_export", "role": "ops_lead", "seq": 28, "total": 23, "visible": 3}
+{"at": "2026-10-20T09:00:28Z", "event": "access_export", "role": "legal_counsel", "seq": 29, "total": 23, "visible": 2}
+{"at": "2026-10-20T09:00:29Z", "event": "access_export", "role": "compliance_auditor", "seq": 30, "total": 23, "visible": 23}
+{"at": "2026-10-20T09:00:30Z", "event": "access_export", "role": "analyst", "seq": 31, "total": 23, "visible": 3}
+{"at": "2026-10-20T09:00:31Z", "event": "access_export", "role": "intern", "seq": 32, "total": 23, "visible": 1}

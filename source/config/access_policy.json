@@ -1,0 +1,45 @@
+{
+  "policy_id": "AP-2026-01",
+  "description": "标签子集授权：记录标签必须全部在角色授权集合内才可读取。",
+  "default_deny": true,
+  "labels": {
+    "internal": "仅限公司内部使用",
+    "hr": "人事与绩效信息",
+    "finance": "预算、付款与财务信息",
+    "legal": "合同与法律意见",
+    "ops": "运维与事故信息",
+    "audit": "审计发现与整改信息",
+    "analytics": "经营分析聚合信息",
+    "sensitive": "高敏信息，需额外授权"
+  },
+  "roles": {
+    "hr_admin": {
+      "description": "人事管理员",
+      "granted_labels": ["internal", "hr", "sensitive"]
+    },
+    "finance_controller": {
+      "description": "财务控制",
+      "granted_labels": ["internal", "finance", "sensitive"]
+    },
+    "ops_lead": {
+      "description": "运维负责人",
+      "granted_labels": ["internal", "ops"]
+    },
+    "legal_counsel": {
+      "description": "法务顾问",
+      "granted_labels": ["internal", "legal", "sensitive"]
+    },
+    "compliance_auditor": {
+      "description": "合规审计员，可读全部标签",
+      "granted_labels": ["internal", "hr", "finance", "legal", "ops", "audit", "analytics", "sensitive"]
+    },
+    "analyst": {
+      "description": "经营分析员，仅读内部与聚合信息",
+      "granted_labels": ["internal", "analytics"]
+    },
+    "intern": {
+      "description": "实习人员，仅读普通内部记录",
+      "granted_labels": ["internal"]
+    }
+  }
+}

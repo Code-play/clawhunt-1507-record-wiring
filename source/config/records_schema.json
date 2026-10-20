@@ -1,0 +1,56 @@
+{
+  "schema_id": "management-record-v1",
+  "description": "管理记录最小 Schema：来源可定位、时间可追溯、访问可判定。",
+  "record_id_pattern": "^MR-[0-9]{4}-[0-9]{4}$",
+  "hash_pattern": "^[0-9a-f]{64}$",
+  "max_title_length": 120,
+  "min_body_length": 10,
+  "record_types": [
+    "meeting_minutes",
+    "policy_change",
+    "org_change",
+    "budget_approval",
+    "vendor_assessment",
+    "incident_review",
+    "audit_finding",
+    "contract_review",
+    "performance_review",
+    "procurement_request"
+  ],
+  "sensitivity_levels": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "source_systems": [
+    "hr-system",
+    "wiki",
+    "contract-system",
+    "finance-erp",
+    "ops-jira",
+    "audit-trail"
+  ],
+  "known_labels": [
+    "internal",
+    "hr",
+    "finance",
+    "legal",
+    "ops",
+    "audit",
+    "analytics",
+    "sensitive"
+  ],
+  "timestamp_format": "UTC ISO-8601, YYYY-MM-DDTHH:MM:SSZ",
+  "source_required": [
+    "system",
+    "uri",
+    "record_id",
+    "hash",
+    "captured_at"
+  ],
+  "access_required": [
+    "labels",
+    "owner_role",
+    "sensitivity"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "rules_id": "PR-2026-01",
+  "version": 1,
+  "replacement_template": "[{category}:{token}]",
+  "name_terms": [
+    "张伟",
+    "李娜",
+    "王强",
+    "陈静",
+    "刘洋",
+    "赵敏",
+    "孙浩",
+    "周婷",
+    "吴磊",
+    "郑爽"
+  ],
+  "rules": [
+    {
+      "id": "R-IDCARD",
+      "category": "IDCARD",
+      "kind": "regex",
+      "pattern": "(?<![0-9])[1-9][0-9]{16}[0-9Xx](?![0-9])",
+      "priority": 1,
+      "description": "18 位身份证号（合成样例）"
+    },
+    {
+      "id": "R-BANKCARD",
+      "category": "BANKCARD",
+      "kind": "regex",
+      "pattern": "(?<![0-9])[0-9]{16,19}(?![0-9])",
+      "priority": 2,
+      "description": "16 到 19 位银行卡号"
+    },
+    {
+      "id": "R-PHONE-CN",
+      "category": "PHONE",
+      "kind": "regex",
+      "pattern": "(?<![0-9])1[3-9][0-9]{9}(?![0-9])",
+      "priority": 3,
+      "description": "中国大陆手机号"
+    },
+    {
+      "id": "R-EMAIL",
+      "category": "EMAIL",
+      "kind": "regex",
+      "pattern": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}",
+      "priority": 4,
+      "description": "电子邮箱"
+    },
+    {
+      "id": "R-EMPID",
+      "category": "EMPID",
+      "kind": "regex",
+      "pattern": "EMP-[0-9]{5}",
+      "priority": 5,
+      "description": "员工编号"
+    },
+    {
+      "id": "R-NAME",
+      "category": "NAME",
+      "kind": "terms",
+      "priority": 6,
+      "description": "虚构人名词表（合成数据，非真实姓名）"
+    }
+  ]
+}

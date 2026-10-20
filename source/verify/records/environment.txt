@@ -1,0 +1,4 @@
+python=3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]
+executable=C:\Users\18777\anaconda3\python.exe
+platform=win32
+cwd=D:\works\clawhunt-agent\deliverables\1507-record-wiring

@@ -1,0 +1,11 @@
+{
+  "added": 23,
+  "input_file": "samples/raw_records.jsonl",
+  "redaction_findings": 70,
+  "redaction_records": 24,
+  "rejected": 0,
+  "skipped_duplicate": 1,
+  "stored_rows": 23,
+  "total_lines": 24,
+  "version_bumped": 0
+}

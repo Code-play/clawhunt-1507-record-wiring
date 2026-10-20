@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.store/
+tests/.tmp/
+verify/_tmp_verify/
+build/
+dist/
+*.egg-info/
+.DS_Store
+Thumbs.db
